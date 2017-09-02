@@ -1,3 +1,5 @@
+//API DE GOOGLE MAPS
+
 var api = AIzaSyADRjgYqBMCQPX9NAMLocWzOcl4RI5sww0;
 
 function initMap() {
@@ -15,8 +17,12 @@ function initMap() {
     */
   });
 
+  var contenido = '<h2>GDLWEBCAMP</h2>'+
+                    '<p>Del 10 al 12 de Diciembre</p>'+
+                    '<p>Visitanos!</p>'
+
   var informacion = new google.maps.InfoWindow({
-    content: "Hola mundo"
+    content: contenido
   });
 
   var marker = new google.maps.Marker({
