@@ -1,9 +1,8 @@
 var api = AIzaSyADRjgYqBMCQPX9NAMLocWzOcl4RI5sww0;
 
-var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('mapa'), {
-    center: {lat: -34.397, lng: 150.644},
+  var map = new google.maps.Map(document.getElementById('mapa'), {
+    center: {lat: 20.6772885, lng: -103.3856328},
     zoom: 8
   });
 }
