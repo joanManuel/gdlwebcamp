@@ -14,6 +14,12 @@ function initMap() {
     'scrollwheel ':false
     */
   });
+
+  var marker = new google.maps.Marker({
+    position: latLng,
+    map: map,
+    title:'GDLWEBCAMP'
+  });
 }
 
 
