@@ -1,9 +1,13 @@
 var api = AIzaSyADRjgYqBMCQPX9NAMLocWzOcl4RI5sww0;
 
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('mapa'), {
-    center: {lat: 20.6772885, lng: -103.3856328},
-    zoom: 8
+  var latLng = {
+      lat: 20.6772885,
+      lng: -103.3856328
+  }
+    var map = new google.maps.Map(document.getElementById('mapa'), {
+    'center': latLng,
+    'zoom': 14
   });
 }
 
