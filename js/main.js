@@ -15,11 +15,20 @@ function initMap() {
     */
   });
 
+  var informacion = new google.maps.InfoWindow({
+    content: "Hola mundo"
+  });
+
   var marker = new google.maps.Marker({
     position: latLng,
     map: map,
     title:'GDLWEBCAMP'
   });
+
+    marker.addListener('click',function(){
+        informacion.open(map, marker);
+    });
+
 }
 
 
