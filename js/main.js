@@ -1,3 +1,15 @@
+$(function(){
+    //programa de Conferencia
+    $('.programa-evento .info-curso:first').show();
+    $('.menu-programa a').on('click',function(){
+    $('.ocultar').hide();
+
+
+    var enlace = $(this).attr('href');
+     $(enlace).fadeIn(1000);
+ });
+});
+
 //API DE GOOGLE MAPS
 
 var api = AIzaSyADRjgYqBMCQPX9NAMLocWzOcl4RI5sww0;
@@ -162,3 +174,7 @@ function initMap() {
         }
     });// DOM CONTENT LOADED
 })();
+
+$(function(){
+   alert("funciona");
+});

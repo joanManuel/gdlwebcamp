@@ -407,6 +407,9 @@ nav.menu-programa a i, div.detalle-evento p i{
     font-size: 1.6em;
     margin-right: 10px;
 }
+div.ocultar{
+ display: none;
+}
 /** detalle evento **/
 div.detalle-evento{
     margin-top: 20px;
