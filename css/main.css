@@ -307,6 +307,13 @@ div.barra{
     background-color: #353535;
     padding: 20px 0;
 }
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 div.logo{
     width: 80%;
     float: left;
@@ -321,7 +328,8 @@ div.logo img{
 }
 /** Navgecion principal**/
 nav.navegacion-principal{
-  
+  display: none;
+    width: 100%;
 }
 nav.navegacion-principal a{
     font-family: 'Oswald', sans-serif;
@@ -779,6 +787,18 @@ p.copyright{
 }
 
 /*** INTERNAS  ***/
+
+/** Conferencia**/
+body.conferencia .navegacion-principal .activo{
+    border-bottom: 2px solid #fe4918;
+}
+
+div.galeria a{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
 /** Registro **/
 form.registro h3{
     text-align: center;

@@ -2,6 +2,26 @@ $(function(){
     //Lettering
     $('.nombre-sitio').lettering();
     
+    //menu fijo
+    var windowHeight = $(window).height();
+    var barraAltura = $('.barra').innerHeight();
+
+    $(window).scroll(function(){
+       var scroll = $(window).scrollTop();
+        if(scroll > windowHeight){
+            $('.barra').addClass('fixed');
+            $('body').css({'margin-top': barraAltura+'px'});
+        }   else{
+            $('.barra').removeClass('fixed');
+            $('body').css({'margin-top': '0px'});
+        }
+    });
+    //Menu Responsive
+    $('.menu-movil').on('click',function(){
+       $('.navegacion-principal').slideToggle();
+    });
+
+
     
     //programa de Conferencia
     $('.programa-evento .info-curso:first').show();
@@ -40,7 +60,7 @@ $('.cuenta-regresiva').countdown('2017/10/07 09:00:00', function(event){
 
 //API DE GOOGLE MAPS
 
-var api = AIzaSyADRjgYqBMCQPX9NAMLocWzOcl4RI5sww0;
+//var api = AIzaSyADRjgYqBMCQPX9NAMLocWzOcl4RI5sww0;
 
 function initMap() {
   var latLng = {
@@ -105,6 +125,9 @@ function initMap() {
         //Extras
         var camisas = document.getElementById('camisa_evento'); 
         var etiquetas = document.getElementById('etiquetas'); 
+
+        if(document.getElementById('calcular')){
+
 
         calcular.addEventListener('click', calcularMontos);
 
@@ -200,9 +223,8 @@ function initMap() {
                 document.getElementById(diasElegidos[i]).style.display = 'block';
             }
         }
+
+        }
     });// DOM CONTENT LOADED
 })();
 
-$(function(){
-   alert("funciona");
-});
